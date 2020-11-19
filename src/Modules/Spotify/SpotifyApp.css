@@ -1,0 +1,48 @@
+.app-spotify {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.spotify-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 7px;
+  justify-content: center;
+  flex: 0 1 calc(100% - 25px);
+}
+
+.spotify-content p {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.spotify-error {
+  color: red;
+}
+
+.spotify-login {
+  appearance: none;
+  background: #fff;
+  color: #333;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  border: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  outline: none;
+}

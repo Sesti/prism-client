@@ -1,0 +1,10 @@
+.dark-theme.dashboard {
+  background-color: #1d233e;
+}
+.dark-theme .app {
+  background: #252d47;
+  border: 1px solid #173454;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 12px 21px -10px #11365c;
+}

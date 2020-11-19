@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// import "./App_dark.css";
+import AppFactory from "./AppFactory";
+
+// @Todo : Fetch this object from settings
+let ui = [
+  {
+    name: "news",
+    width: 2,
+  },
+  {
+    name: "weather",
+  },
+  {
+    name: "spotify",
+    width: 2,
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="dashboard dark-theme">
+      {ui.map((app) => (
+        <AppFactory key={app.name} {...app} />
+      ))}
     </div>
   );
 }
